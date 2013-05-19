@@ -22,6 +22,8 @@ public class Main
                 HandleUnexpected(args);
             }
         }
+        else
+            a = 10.0;
         
         Chain c = new Chain();
         
@@ -38,7 +40,7 @@ public class Main
         double a = 0.0;
         try
         {
-            a = Double.parseDouble(args[1]);
+            a = Double.parseDouble(args[0]);
         }
         catch(Exception e)
         {
